@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post">
+        <fieldset>
+            <legend>Contact Me</legend>
+            <table>
+                <td><label for="first name">First Name:</label></td>
+                <td><input type="text" id="first name" name="First Name" required></td>
+                <tr>
+                    <td><label for="last name">Last Name:</label></td>
+                    <td><input type="text" id="last name" name="Last Name" required></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label>Gender:</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="gender" value="male">Male
+                        <input type="radio" name="gender" value="female">Female
+                    </td>
+                </tr>
+                <tr>
+                     <td><label for="email">Email:</label></td>
+                    <td><input type="text" id="email" name="email" required></td>
+                </tr>
+                <tr>
+                    <td><label>Services:</label></td>
+                    <td>
+                        <input type="checkbox" value="Web Development">Web Development
+                        <input type="checkbox" value="AI/ML">AI/ML
+                        <input type="checkbox" value="Backend">Backend
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Reason of Contact" >Reason of Contact:</label>
+                    </td>
+                    <td>
+                        <select id="Reason of Contact" name="Reason of Contact">
+                            <option>Please select any</option>
+                            <option>Job</option>
+                            <option>Project</option>
+                            <option>Thesis</option>
+
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Book Slot">Date:</label>
+                    </td>
+                    
+                    
+                    <td>
+                        <input type="datetime-local" value="date">
+                        
+                    </td>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="submit">
+                            <input type="reset">
+                        
+                        </td>
+                    </tr>
+                    
+                    
+                </tr>
+            </table>
+        </fieldset>
+
+    </form>
+    <br>
+    <a href="index.html">Back to Home</a>
+</body>
+</html>

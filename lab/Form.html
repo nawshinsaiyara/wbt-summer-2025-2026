@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form method="post">
+        <h2>Donor Information</h2>
+        
+            <table>
+                <td><label for="first name">First Name*</label></td>
+                <td><input type="text" id="first name" name="First Name" required></td>
+                <tr>
+                    <td><label for="last name">Last Name*</label></td>
+                    <td><input type="text" id="last name" name="Last Name" required></td>
+                </tr>
+                <tr>
+                    <td><label>Company</label></td>
+                    <td>
+                        <input type="text" id="company" name="comapny">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Address 1*</label></td>
+                    <td>
+                        <input type="text" id="address1" name="address1 required">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Address 2*</label></td>
+                    <td>
+                        <input type="text" id="address2" name="address2">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>City*</label></td>
+                    <td>
+                        <input type="text" id="city" name="city" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="State" >State*</label>
+                    </td>
+                    <td>
+                        <select id="State" name="State" required>
+                            <option>Select a state</option>
+                            <option>Dhaka</option>
+                            <option>Sylhet</option>
+                            <option>Cumilla</option>
+
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Zip Code*</label>
+                    </td>
+                    <td>
+                        <input type="text" pattern="[A-Za-z0-9]" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Country" >Country*</label>
+                    </td>
+                    <td>
+                        <select id="Country" name="Country" required>
+                            <option>Select a country</option>
+                            <option>Bangladesh</option>
+                            <option>USA</option>
+                            <option>UK</option>
+
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="Phone">Phone</label></td>
+                    <td><input type="tel"></td>
+                </tr>
+                <tr>
+                    <td><label for="Fax">Fax</label></td>
+                    <td><input type="tel"></td>
+                </tr>
+                <tr>
+                     <td><label for="email">Email*</label></td>
+                    <td><input type="text" id="email" name="email" required></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label>Donation Amount*</label>
+                        <br>
+                        <p><small>(Check a button or type in your amount)</small></p>
+                    </td>
+                    
+                    <td>
+                        <input type="radio" name="number" value="None">None
+                        <input type="radio" name="number" value="$50">$50
+                        <input type="radio" name="number" value="$75">$75
+                        <input type="radio" name="number" value="$100">$100
+                        <input type="radio" name="number" value="$250">$250
+                        <input type="radio" name="number" value="Other">Other
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td></td>
+                <td>
+                    <label >Other Amount $</label>
+                    <input type="tel" id="other amount" name="other amount">
+                </td>
+
+                </tr>
+                <tr>
+                    <td><label>Recuring Donation</label>
+                    <br>
+                    <p><small>(Check if yes)</small></p>
+                    </td>
+                    
+                    <td>
+                        <input type="checkbox" value="name">I am interested in giving a regular basis.
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <label >Monthly Credit Card $</label>
+                        <input type="number" min="500" max="25000">
+                    
+                    
+                        <label >For</label>
+                        <input type="number" min="500" max="25000">
+                    </td>
+                    <td><label >Month</label></td>
+                        
+                </tr>
+               
+                
+                
+                
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="submit">
+                            <input type="reset">
+                        
+                        </td>
+                    </tr>
+                    
+                    
+                
+            </table>
+        
+
+    </form>
+    
+</body>
+</html>
