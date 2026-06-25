@@ -7,7 +7,7 @@
 </head>
 <body>
     <form method="post">
-        <h2>Donor Information</h2>
+        <h3>Donor Information</h3>
         
             <table>
                 <td><label for="first name">First Name*</label></td>
@@ -86,7 +86,7 @@
                 </tr>
                 <tr>
                      <td><label for="email">Email*</label></td>
-                    <td><input type="text" id="email" name="email" required></td>
+                    <td><input type="email" id="email" name="email" required></td>
                 </tr>
 
                 <tr>
@@ -121,7 +121,7 @@
                     </td>
                     
                     <td>
-                        <input type="checkbox" value="name">I am interested in giving a regular basis.
+                        <input type="checkbox" value="donation">I am interested in giving a regular basis.
                         
                     </td>
                 </tr>
@@ -138,10 +138,8 @@
                     <td><label >Month</label></td>
                         
                 </tr>
-               
                 
-                
-                
+        
                     <tr>
                         <td></td>
                         <td>
@@ -157,6 +155,94 @@
         
 
     </form>
+    <form method="post">
+        <h3>Honorarium and Memorial Donation Information</h3>
+        <table>
+            
+                    <td>
+                        <label>I would like to make this donation</label>
+                        
+                    </td>
+                    
+                    <td>
+                        <input type="radio" name="name" value="To Honor">To Honor
+                        <br>
+                        <input type="radio" name="name" value="In Memory Of">To Honor
+                    </td>
+                    
+
+                    <tr>
+                        <td><label for="name">Name</label></td>
+                        <td><input type="text" id="name" name="Name"> </td> 
+                    </tr>
+                     <tr>
+                        <td><label for="acknowledge donation to">Acknowledge Donation to</label></td>
+                        <td><input type="text" id="acknowledge donation to" name="acknowledge donation to"> </td> 
+                    </tr>
+                    <tr>
+                        <td><label>Address</label></td>
+                        <td><input type="text" id="address" name="address"></td>
+                    </tr>
+                    <tr>
+                        <td><label>City</label></td>
+                        <td><input type="text" id="city" name="city"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="State" >State</label></td>
+                        <td>
+                        <select id="State" name="State" required>
+                            <option>Select a state</option>
+                            <option>Dhaka</option>
+                            <option>Sylhet</option>
+                            <option>Cumilla</option>
+
+                        </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>Zip</label></td>
+                        <td>
+                        <input type="text" pattern="[A-Za-z0-9]">
+                        </td>
+                    </tr>
+                    
+
+        </table>
+
+    </form>
+        <form method="post">
+        <h3>Additional Information</h3>
+
+        <table>
+
+            
+                  
+                    
+                    <tr>
+                      <td></td>
+                        <td><label for="name">Name</label>
+                        <input type="text" id="name" name="Name"></td>
+                    </tr>
+                    
+                    <tr>
+                        <td></td>
+                       <tr><td><input type="checkbox" value="gift">I would like my gift to remain anonymous.</td></tr> 
+                        
+                    <tr>      <td><input type="checkbox" value="gift">My employer offers a matching gift program. I will mail the matching gift form.</td>
+</tr>
+                    
+                    
+                    <tr>                        <td><input type="checkbox" value="gift">Please save the cost of acknowledge this gift by not mailling a thank you letter.</td>
+</tr>
+                    </tr>
+                    
+                    
+                    
+
+        </table>
+
+    </form>
+    
     
 </body>
 </html>

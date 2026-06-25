@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form3</title>
+</head>
+<body>
+    <form method="post">
+        <h3>Create your account</h3>
+        <p>Join us in a couple of steps.</p>
+        <hr>
+        <div class="field">
+            <label for="full name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Jon Doe"></input>
+            
+        </div>
+
+        <div class="field">
+            <label for="age">Age</label>
+            <input type="number" min="18" max="60" placeholder="28"></input>
+            
+        </div>
+         <div class="field">
+            <label for="date of birth">Date of Birth</label>
+            <input type="datetime-local" id="date" name="date"></input>
+            
+        </div>
+         <div class="field">
+            <label for="email address">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="jondoe@gmail.com"></input>
+            
+        </div>
+         <div class="field">
+            <label for="Password">Password</label>
+            <input type="password" id="password" name="password" placeholder="******"></input>
+            
+        </div>
+        
+         
+        <div class="select">
+            <label for="preferred contact"> Preferred contact</label>
+            <input type="radio" name="contact" value="email">Email
+            <input type="radio" name="contact" value="phone">Phone
+            <input type="radio" name="contact" value="sms">SMS
+        </div>
+        <div class="button">
+            <button type="submit" class="btn-primary">Submit</button>
+            <button type="reset" class="btn-secondary">Reset</button>
+            
+            
+        </div>
+
+    </form>
+</body>
+</html>
